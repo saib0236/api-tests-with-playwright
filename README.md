@@ -1,3 +1,6 @@
+*********https://github.com/saib0236/api-tests-with-playwright**********
+
+
 API Test Automation with Playwright and Allure Reporting(by Sai kumar)
 
 ## How to Run the Tests
@@ -378,6 +381,8 @@ You must run the script exactly as described above to ensure:
 - The Allure report reflects the correct sequence and result of test execution.
 
 
+Sample Allure Report for this project execution
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/f582aad5-6304-4b24-b9a4-09c6bf52a506" />
 
 ##################### All the tools used#################
 
@@ -387,3 +392,5 @@ You must run the script exactly as described above to ensure:
 - fs (built-in)	File operations (token, data, etc.)
 - Git
 - GitHub Actions: CI/CD pipeline for automated testing and deployment
+
+
