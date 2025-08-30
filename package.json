@@ -1,0 +1,21 @@
+{
+  "name": "Playwright_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report",
+    "test:allure:ordered": "npx playwright test tests/authentication/01-server-readiness-check.spec.js tests/authentication/02-authentication.spec.js tests/books/03-books_management.spec.js tests/books/04-negativeToken.spec.js && npx allure generate ./allure-results --clean -o ./allure-report && npx serve ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "allure-playwright": "^3.3.3"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

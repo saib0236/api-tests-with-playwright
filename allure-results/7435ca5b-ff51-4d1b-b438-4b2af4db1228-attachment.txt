@@ -1,0 +1,1 @@
+signup user details: { email: 'user_1756580066089@test.com', password: 'StrongPassword123' }

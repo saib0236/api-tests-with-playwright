@@ -1,0 +1,14 @@
+{
+    "CreateBook": {
+        "name": "Harry Potter and the Sorcerers Stone",
+        "author": "J.K. Rowling",
+        "published_year": 1997,
+        "book_summary": "An orphan learns hes a wizard and begins his magical journey at Hogwarts."
+    },
+    "UpdateBook": {
+        "name": "Harry Potter and the Chamber of Secrets",
+        "author": "J.K. Rowling",
+        "published_year": 1998,
+        "book_summary": "An orphan learns hes a wizard and begins his magical journey at Hogwarts."
+    }
+}

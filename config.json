@@ -1,0 +1,8 @@
+{
+  "env": "QA",
+  "QA": {
+    "url": "http://127.0.0.1:8000",
+    "userEmail": "testuser@gmail.com",
+    "password": "test@123"
+  }
+}
