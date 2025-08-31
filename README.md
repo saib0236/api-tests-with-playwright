@@ -382,7 +382,8 @@ You must run the script exactly as described above to ensure:
 
 
 Sample Allure Report for this project execution
-<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/f582aad5-6304-4b24-b9a4-09c6bf52a506" />
+
+<img width="1820" height="911" alt="image" src="https://github.com/user-attachments/assets/251c4be6-ca51-4ba3-94df-a62ce33edfcd" />
 
 ##################### All the tools used#################
 

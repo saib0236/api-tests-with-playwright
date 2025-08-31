@@ -1,0 +1,2 @@
+Incorrect Password Login Request: { email: 'incorrect@example.com', password: 'incorrectPassword' }
+Incorrect Password Login Response: {"detail":"Incorrect email or password"}
