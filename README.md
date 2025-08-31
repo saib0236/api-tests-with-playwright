@@ -84,31 +84,50 @@ I used index.html and Allure-reports for reporting.
 
 ##################Project Structure##################
 
+Here is the project structure for your repository `api-tests-with-playwright` as found in the codebase. Note that search results are limited and this may not reflect every file/folder. For the complete, up-to-date structure, please visit the [GitHub repository](https://github.com/saib0236/api-tests-with-playwright).
+
+```
 api-tests-with-playwright/
 ├── allure-report/        # Allure HTML reports output
-|
 ├── config.json           # Configuration file for tests
-|
+├── generatedtoken        # (appears to store a sample/generated JWT token)
+├── bookstore/            # FastAPI backend
+│   ├── main.py           # FastAPI entry point
+│   └── requirements.txt  # Python dependencies
 ├── node_modules/         # Node.js dependencies
-|
 ├── package.json          # Project dependencies and scripts
-|
 ├── playwright.config.js  # Playwright configuration
-|
 ├── test-results/         # Playwright test output
-|
 ├── tests/                # API test scripts
-	|
-	├── authentication/
-	│   ├── 01-server-readiness-check.spec.js         # Checks API server health/readiness endpoint
-	│   └── 02-authentication.spec.js                 # Tests signup, login, token generation, duplicate email, wrong credentials
-	├── books/
-	│   ├── 03-books_management.spec.js               # Tests CRUD operations for books (add, fetch, update, delete)
-	│   └── 04-negativeToken.spec.js                  # Tests negative scenarios: invalid token and invalid book IDs
+│   ├── authentication/
+│   │   ├── 01-server-readiness-check.spec.js     # Checks API server health/readiness endpoint
+│   │   └── 02-authentication.spec.js             # Tests signup, login, token generation, duplicate email, wrong credentials
+│   └── books/
+│       ├── 03-books_management.spec.js           # Tests CRUD operations for books (add, fetch, update, delete)
+│       └── 04-negativeToken.spec.js              # Tests negative scenarios: invalid token and invalid book IDs
+├── global-setup.js       # Sets up a FastAPI server
+├── global-teardown.js    # Clean up after tests by stopping the FastAPI server
+├── server-manager        # Manage a FastAPI server during integration tests
+└── README.md             # Project documentation
+```
+
+For more details or to see the full file tree, visit the [repository file browser](https://github.com/saib0236/api-tests-with-playwright).
+
+
 
 ############# Project Structure Implementation Details#################
 
 This document details the structure and purpose of each folder and file in the project's test suite.
+
+---
+
+- **bookstore/**: Contains the FastAPI implementation for the Bookstore API.
+  - `main.py` registers endpoints for book management, user signup, login, and health check.
+  - `database.py` defines ORM models for users and books, and manages DB connections.
+  - `utils.py` provides JWT token creation logic for authentication.
+  - `constants.py` contains configuration constants such as the JWT secret and algorithm.
+  - `Dockerfile` enables containerization for easy deployment.
+  - `requirements.txt` lists all Python dependencies.
 
 ---
 
@@ -393,5 +412,3 @@ Sample Allure Report for this project execution
 - fs (built-in)	File operations (token, data, etc.)
 - Git
 - GitHub Actions: CI/CD pipeline for automated testing and deployment
-
-
